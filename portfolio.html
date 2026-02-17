@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Michael</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Make project cards clickable */
+        a.project-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        /* Prevent project images from warping */
+        img.project-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-content">
+            <a href="#hero" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle">🌑</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="section-content hero-content">
+            <h1 class="hero-title">Hi, I'm Michael</h1>
+            <p class="hero-subtitle">Software Developer and Engineer</p>
+            <a href="#contact" class="hero-cta">Get In Touch</a>
+            <div class="scroll-indicator">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-content">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I'm an aspiring engineer who loves to code and is excited to keep growing in technology.
+                        I have a foundation in HTML, CSS, and JavaScript, and I'm always working to improve my skills.
+                    </p>
+                    <p>In my free time, I build projects, learn new tools, and explore different areas
+                        of development. I'm enthusiastic about the future and eager to keep learning.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="html.svg" alt="HTML">
+                        </div>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="css.svg" alt="CSS">
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="js.svg" alt="JavaScript">
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="node.svg" alt="Node.js">
+                        </div>
+                        <h3>Node.js</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="gh.svg" alt="GitHub">
+                        </div>
+                        <h3>GitHub</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="ai.svg" alt="AI/LLM">
+                        </div>
+                        <h3>LLM</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Habit Tracker — replace # with your live URL -->
+                <a href="#" target="_blank" class="project-card">
+                    <img class="project-image" src="habit.gif" alt="Habit Tracker preview">
+                    <div class="project-content">
+                        <h3>Habit Tracker</h3>
+                        <p>A modern web application that lets you create tasks and build structured routines to improve
+                            your daily lifestyle.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Etch-a-Sketch — replace # with your live URL -->
+                <a href="#" target="_blank" class="project-card">
+                    <img class="project-image" src="sketch.gif" alt="Etch-a-Sketch preview">
+                    <div class="project-content">
+                        <h3>Etch-a-Sketch</h3>
+                        <p>An interactive drawing web app that lets you sketch on a digital grid using simple controls
+                            and real-time color changes.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Rock Paper Scissors — replace # with your live URL -->
+                <a href="#" target="_blank" class="project-card">
+                    <img class="project-image" src="rps.gif" alt="Rock Paper Scissors preview">
+                    <div class="project-content">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>A fun browser-based game where you play rock, paper, scissors against the computer with
+                            instant results and score tracking.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="resume-section">
+                <h3>Work Experience</h3>
+                <div class="resume-item">
+                    <h4>National Field Support, Charter Communications</h4>
+                    <span class="date">2025 - Present</span>
+                    <p>Provisioned and troubleshooted customer equipment, supporting 80+ technicians daily while
+                        ensuring consistent network performance and uptime.</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Sales Team Lead, Best Buy</h4>
+                    <span class="date">2022 - 2025</span>
+                    <p>Consistently ranked top 5% in the micro market in sales, generating over
+                        $100,000/month in revenue, while ensure an outstanding customer experience.</p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h3>Education</h3>
+                <div class="resume-item">
+                    <h4>The Odin Project - Full Stack Javascript Path</h4>
+                    <span class="date">2025</span>
+                    <p>Self-learning through The Odin Project, gaining hands on experience in HTML, CSS, JavaScript,
+                        Git, responsive design, DOM manipulation, API integration, and Node.js through real world web
+                        development projects.</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Google Cybersecurity Certification</h4>
+                    <span class="date">2023</span>
+                    <p>Earned the Google Cybersecurity Certificate with hands on training in threat detection, risk
+                        management, SIEM tools, and Linux systems.</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Aquinas Institute - High School Diploma</h4>
+                    <span class="date">2013 - 2020</span>
+                    <p>Graduated with high honor roll, demonstrating consistent academic excellence and dedication.
+                        Excelled in Video Game Club, showing teamwork, strategic thinking, and leadership while
+                        developing games in Python with club members.</p>
+                </div>
+            </div>
+
+            <a href="#" class="download-btn">Download Full Resume</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-content contact-content">
+            <h2 class="section-title">Let's Connect</h2>
+            <p style="color: var(--text-secondary); font-size: 1.2rem; margin-bottom: 2rem;">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            </p>
+            <div class="contact-links">
+                <a href="/cdn-cgi/l/email-protection#2d5442585f0348404c44416d48554c405d4148034e4240"
+                    class="contact-link">
+                    <div class="contact-icon">📧</div>
+                    <span>Email</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="contact-link">
+                    <div class="contact-icon">💼</div>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/miiv0" target="_blank" class="contact-link">
+                    <div class="contact-icon">👾</div>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
